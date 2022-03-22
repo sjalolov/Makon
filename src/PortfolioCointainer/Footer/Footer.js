@@ -7,60 +7,74 @@ import {
     FaGithub,
     FaLinkedin,
   } from "react-icons/fa";
-  const fontStyles = { color: "white", fontSize: "30px" };
-
+  
+  const fontStyles = { color: "white", fontSize: "30px", position: "20px", marginTop: "5px"};
 
 export default function Footer() {
   return (
     <body>
-      <footer>
-        <div class="footer-content">
-          <h3>Foolish Developer</h3>
-          <p>
-            Raj Template is a blog website where you will find great tutorials
-            on web design and development. Here each tutorial is beautifully
-            described step by step with the required source code.
-          </p>
-          <div className="icon">
-            <a href="https://shohrukhjalolov.com/">
-              <FaFacebook style={fontStyles} />
-            </a>
-            <a href="https://shohrukhjalolov.com/">
-              <FaInstagram style={fontStyles} />
-            </a>
-            <a href="https://shohrukhjalolov.com/">
-              <FaYoutube style={fontStyles} />
-            </a>
-            <a href="https://shohrukhjalolov.com/">
-              <FaGithub style={fontStyles} />
-            </a>
-            <a href="https://shohrukhjalolov.com/">
-              <FaLinkedin style={fontStyles} />
-            </a>
-          </div>
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">Shohrukh Jalolov</span>
         </div>
-        <div class="footer-bottom">
-          <p>
-            copyright &copy; <a href="n">Makon 2022</a>{" "}
-          </p>
-          <div class="footer-menu">
-            <ul class="f-menu">
-              <li>
-                <a href="n">Home</a>
-              </li>
-              <li>
-                <a href="n">About</a>
-              </li>
-              <li>
-                <a href="n">Contact</a>
-              </li>
-              <li>
-                <a href="n">Blog</a>
-              </li>
-            </ul>
-          </div>
+        <div class="media-icons">
+        <a href="https://shohrukhjalolov.com/"><FaFacebook style={fontStyles} /></a>
+        <a href="https://shohrukhjalolov.com/"><FaInstagram style={fontStyles} /></a>
+        <a href="https://shohrukhjalolov.com/"><FaYoutube style={fontStyles} /></a>
+        <a href="https://shohrukhjalolov.com/"><FaGithub style={fontStyles} /></a>
+        <a href="https://shohrukhjalolov.com/"><FaLinkedin style={fontStyles} /></a>
         </div>
-      </footer>
-    </body>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="none">Home</a></li>
+          <li><a href="none">Contact us</a></li>
+          <li><a href="none">About us</a></li>
+          <li><a href="none">Get started</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="none">App design</a></li>
+          <li><a href="none">Web design</a></li>
+          <li><a href="none">Logo design</a></li>
+          <li><a href="none">Banner design</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="none">Profile</a></li>
+          <li><a href="none">My account</a></li>
+          <li><a href="none">Prefrences</a></li>
+          <li><a href="none">Purchase</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Courses</li>
+          <li><a href="none">HTML and CSS</a></li>
+          <li><a href="none">JavaScript</a></li>
+          <li><a href="none">Photography</a></li>
+          <li><a href="none">Photoshop</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"/></li>
+          <li><input type="button" value="Subscribe"/></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2021 <a href="none">Shohrukh Jalolov.</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="none">Privacy policy</a>
+          <a href="none">Terms and condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+</body>
   );
 }
