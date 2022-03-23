@@ -5,6 +5,7 @@ import { FaStar } from "react-icons/fa";
 export default function Contactme() {
   return (
     <body>
+        <h1>Contact Us</h1>
       <div class="container">
         <div class="box">
           <div class="image">

@@ -17,6 +17,7 @@ html,body{
   place-items: center;
   color: rgb(255, 255, 255);
   margin-bottom: 100px;
+  color:#000000;
 }
 .container{
   max-width: 1100px;
@@ -53,8 +54,7 @@ color: #17c0eb
   width: 100%;
   border-radius: 100%;
   object-fit: cover;
-  border: 3px solid #00B4DB;
-  
+  border: 3px solid #00aed1;  
 }
 .box p{
   text-align: justify;
@@ -65,7 +65,9 @@ color: #17c0eb
 }
 .box .name_job{
   margin: 10px 0 3px 0;
-  color: #00B4DB;
+  color: #00aed1;  /* fallback for old browsers */
+  color: -webkit-linear-gradient(to right, #00aed1, #00d4ca);  /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(to right, #00aed1, #00d4ca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 18px;
   font-weight: 600;
 }
@@ -82,11 +84,13 @@ color: #17c0eb
   width: 100%;
 }
 .btns button{
-  background: #00B4DB;
+  background: #00aed1;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00aed1, #00d4ca);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00aed1, #00d4ca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   padding: 9px 0px;
   outline: none;
-  border: 2px solid #00B4DB;
+  border: 2px solid #ffffff;
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
@@ -103,7 +107,9 @@ color: #17c0eb
   margin-left: 5px;
 }
 .btns button:first-child:hover{
-  background: #00B4DB;
+  background: #00aed1;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00aed1, #00d4ca);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00aed1, #00d4ca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
 }
 .btns button:hover{
