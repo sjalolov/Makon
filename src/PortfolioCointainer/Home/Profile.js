@@ -18,7 +18,7 @@ const fontStyles = {
 };
 
 const fontStylesSeacrh = {
-  color: "White",
+  color: "black",
   fontSize: "30px",
   position: "20px",
   marginTop: "5px",
@@ -65,12 +65,12 @@ export default function Profile(your) {
         <div class="content">
           <div class="text-content">
             <div class="text">Hi, Welcome To</div>
-            <div class="name">макон</div>
+            <div class="name">Makon</div>
             <div class="job">
               <div class="job">
                 <span>We are Here to Build For You</span>
                 <div class="typing-text">
-                  <span class="one">Makon Place</span>
+                  <span class="one">, The Great Houses</span>
                 </div>
               </div>
             </div>
@@ -78,12 +78,6 @@ export default function Profile(your) {
               <button>About Ue</button>
               <button>Follow Us</button>
             </div>
-          </div>
-          <div class="girl">
-            {/* <img
-              src="https://i.postimg.cc/4NrdrqmY/Shohrukh-Jalolov.jpg"
-              alt="Logo"
-            />{" "} */}
           </div>
         </div>
         <div class="media-icons">
