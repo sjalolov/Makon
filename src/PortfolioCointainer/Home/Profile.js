@@ -26,11 +26,10 @@ const fontStylesSeacrh = {
   cursor: "pointer",
 };
 
-
 export default function Profile(your) {
   return (
     <body>
-      <header>
+      <header id="home">
         <nav>
           <div class="navbar">
             <div class="logo">
@@ -41,24 +40,24 @@ export default function Profile(your) {
             </div>
             <ul class="menu">
               <li>
-                <a href="none">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <a href="none">Latest</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a href="none">Category</a>
+                <a href="#image">Images</a>
               </li>
               <li>
-                <a href="none">Services</a>
+                <a href="#services">Services</a>
               </li>
               <li>
-                <a href="none">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
             <div class="searchBox">
               <input type="search" placeholder="Search" />
-              <HiOutlineSearch style={fontStylesSeacrh}/>
+              <HiOutlineSearch style={fontStylesSeacrh} />
             </div>
           </div>
         </nav>
@@ -81,19 +80,19 @@ export default function Profile(your) {
           </div>
         </div>
         <div class="media-icons">
-          <a href="https://shohrukhjalolov.com/">
+          <a href="https://www.facebook.com/">
             <FaFacebook style={fontStyles} />
           </a>
-          <a href="https://shohrukhjalolov.com/">
+          <a href="https://www.instagram.com/">
             <FaInstagram style={fontStyles} />
           </a>
-          <a href="https://shohrukhjalolov.com/">
+          <a href="https://www.youtube.com/">
             <FaYoutube style={fontStyles} />
           </a>
-          <a href="https://shohrukhjalolov.com/">
+          <a href="https://github.com/sjalolov/Makon">
             <FaGithub style={fontStyles} />
           </a>
-          <a href="https://shohrukhjalolov.com/">
+          <a href="https://www.linkedin.com/">
             <FaLinkedin style={fontStyles} />
           </a>
         </div>

@@ -1,25 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-  
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
-header{
+
+header {
   height: 110vh;
-  width: 125.5%;
+  width: 100%;
   background-position: center;
-  background: #1A2980;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-  
+  background: #1a2980; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #26d0ce,
+    #1a2980
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #26d0ce,
+    #1a2980
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-::selection{
+
+::selection {
   background: #ffffff;
 }
-header nav{
+
+header nav {
   position: fixed;
   width: 100%;
   margin-top: 20px;
@@ -27,49 +36,57 @@ header nav{
   top: 0;
   z-index: 12;
 }
-.navbar{
+
+.navbar {
   width: 80%;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   border-radius: 10px;
   justify-content: space-between;
-  background: #00d4ca;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #00aed1, #00d4ca);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00aed1, #00d4ca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00d4ca; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #00aed1,
+    #00d4ca
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #00aed1,
+    #00d4ca
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   overflow: hidden;
-  z-index:2;
+  z-index: 2;
 }
-  header nav .logo{
+header nav .logo {
   height: 80px;
   width: 150px;
 }
-.logo img{
+.logo img {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
-nav .menu{
+nav .menu {
   display: flex;
 }
-nav .menu li{
+nav .menu li {
   list-style: none;
   margin: 0 10px;
 }
-nav .menu a{
+nav .menu a {
   color: #2c3e50;
   font-size: 17px;
   font-weight: 500;
   text-decoration: none;
 }
-nav .menu a:hover{
+nav .menu a:hover {
   color: rgb(255, 255, 255);
 }
-
 
 .searchBox {
   position: relative;
@@ -78,12 +95,12 @@ nav .menu a:hover{
   margin-right: 20px;
 }
 
-.searchBox input{
+.searchBox input {
   background-color: rgb(255, 255, 255);
   border: none;
   outline: none;
   width: 0;
-  padding: 0; 
+  padding: 0;
   opacity: 0;
   border-radius: 40px;
   line-height: 20px;
@@ -106,68 +123,68 @@ nav .menu a:hover{
   text-align: center;
   line-height: 40px;
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-.searchBox:hover input{
+.searchBox:hover input {
   width: 240px;
   opacity: 1;
   padding: 10px 20px;
 }
 
-.searchBox:hover i{
+.searchBox:hover i {
   color: rgb(0, 0, 0);
 }
 
-.text-content{
+.text-content {
   position: absolute;
   top: 33%;
   left: 7%;
   z-index: 1;
 }
-header .text-content .text{
+header .text-content .text {
   font-size: 27px;
   color: #ffffff;
 }
-header .text-content .name{
- color: #ffffff;
- font-size: 75px;
- font-weight: 600;
- margin: -20px 0 0 -3px;
+header .text-content .name {
+  color: #ffffff;
+  font-size: 75px;
+  font-weight: 600;
+  margin: -20px 0 0 -3px;
 }
-header .text-content .job{
- color: #ffffff;
- font-size: 40px;
- margin: 5px 0;
- margin-top: -4px;
- display: flex;
+header .text-content .job {
+  color: #ffffff;
+  font-size: 40px;
+  margin: 5px 0;
+  margin-top: -4px;
+  display: flex;
 }
-.text-content .typing-text{
+.text-content .typing-text {
   margin-left: 10px;
   overflow: hidden;
   white-space: nowrap;
   border-right: 4px solid #00aed1;
   animation: typing 5s steps(15) infinite;
 }
-@keyframes typing{
-  0%{
+@keyframes typing {
+  0% {
     width: 0ch;
   }
-  50%{
+  50% {
     width: 15ch;
   }
-  100%{
+  100% {
     width: 0ch;
   }
 }
-.text-content .job .one{
+.text-content .job .one {
   color: #272727;
 }
-.buttons{
+.buttons {
   margin: 20px 0 0 50px;
   margin-left: 0px;
 }
-.text-content .buttons button{
+.text-content .buttons button {
   outline: none;
   margin: 0 10px;
   border: none;
@@ -177,33 +194,39 @@ header .text-content .job{
   padding: 8px 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: #00aed1;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #00aed1, #00d4ca);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00aed1, #00d4ca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+  background: #00aed1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #00aed1,
+    #00d4ca
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #00aed1,
+    #00d4ca
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.buttons button:hover{
+.buttons button:hover {
   transform: scale(0.97);
 }
 
-header .media-icons{
+header .media-icons {
   display: flex;
   flex-direction: column;
   position: absolute;
   right: 40px;
   bottom: 40px;
 }
-.media-icons a{
- margin-top: 8px;
- font-size: 20px;
- font-weight: 500;
- text-decoration: none;
- opacity: 0.7;
- color: #000000;
- transition: all 0.3s ease;
+.media-icons a {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0.7;
+  color: #000000;
+  transition: all 0.3s ease;
 }
-.media-icons a:hover{
- opacity: 1;
- color: rgb(0, 0, 0)
+.media-icons a:hover {
+  opacity: 1;
+  color: rgb(0, 0, 0);
 }

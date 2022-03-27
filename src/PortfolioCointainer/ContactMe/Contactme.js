@@ -4,8 +4,8 @@ import { FaStar } from "react-icons/fa";
 
 export default function Contactme() {
   return (
-    <body>
-        <h1>Contact Us</h1>
+    <body id="contact">
+      <h1>Contact Us</h1>
       <div class="container">
         <div class="box">
           <div class="image">
@@ -43,7 +43,7 @@ export default function Contactme() {
           </div>
           <div class="name_job">Shohrukh</div>
           <div class="rating">
-          <FaStar class="fas fa-star" />
+            <FaStar class="fas fa-star" />
             <FaStar class="fas fa-star" />
             <FaStar class="fas fa-star" />
             <FaStar class="fas fa-star" />
@@ -70,7 +70,7 @@ export default function Contactme() {
           </div>
           <div class="name_job">Farrukh</div>
           <div class="rating">
-          <FaStar class="fas fa-star" />
+            <FaStar class="fas fa-star" />
             <FaStar class="fas fa-star" />
             <FaStar class="fas fa-star" />
             <FaStar class="fas fa-star" />

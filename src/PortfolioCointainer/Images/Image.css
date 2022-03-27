@@ -1,0 +1,79 @@
+.imagei h1 {
+  text-align: center;
+  text-size-adjust: 30px;
+  color: black;
+  scroll-behavior: smooth;
+  margin-bottom: 2%;
+}
+
+.container-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1060px;
+  height: 650px;
+  margin: 0 auto;
+  margin-top: 1.5%;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation: fade 24s infinite;
+  animation: fade 24s infinite;
+  border-radius: 5px;
+}
+#pic1 {
+  animation-delay: 0s;
+  background-image: url("https://i.postimg.cc/yN1XTxQD/DSC02354-FINAL-1400-50.jpg");
+}
+#pic2 {
+  background-image: url("https://www.devtwins.com/images/graphics/norway2.jpeg");
+  animation-delay: 8s;
+}
+#pic3 {
+  background-image: url("https://www.devtwins.com/images/graphics/norway3.jpeg");
+  animation-delay: 16s;
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+  88% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+  88% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
