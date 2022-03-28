@@ -6,6 +6,7 @@ import Aboutme from "./PortfolioCointainer/AboutMe/Aboutme";
 import Contactme from "./PortfolioCointainer/ContactMe/Contactme";
 import Service from "./PortfolioCointainer/Service/Service";
 import Image from "./PortfolioCointainer/Images/Image";
+import Scroll from "./PortfolioCointainer/Scroll/Scroll";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Service />
       <Aboutme />
       <Contactme />
+      <Scroll/>
       <Footer />
     </div>
   );
