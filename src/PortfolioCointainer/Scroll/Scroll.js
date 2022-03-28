@@ -6,7 +6,7 @@ const Scroll = () => {
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 700) {
+    if (scrolled > 300) {
       setVisible(true);
     } else if (scrolled <= 300) {
       setVisible(false);
@@ -26,7 +26,7 @@ const Scroll = () => {
 
   /* I used form instead of button because when I use button there is a random button that I was not able to get rid of it*/
   return (
-    <form href="none" className="btn">
+    <form href="none" className="btn" color="black">
       <FaArrowCircleUp
         onClick={scrollToTop}
         style={{ display: visible ? "inline" : "none" }}
