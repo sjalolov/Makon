@@ -8,12 +8,14 @@ import Service from "./PortfolioCointainer/Service/Service";
 import Image from "./PortfolioCointainer/Images/Image";
 import Scroll from "./PortfolioCointainer/Scroll/Scroll";
 import Team from "./PortfolioCointainer/Team/Team";
+import CustomizedTimeline from "./PortfolioCointainer/TimeLine/TimeLine";
 
 function App() {
   return (
     <div className="App">
       <Profile />
       <Image />
+      <CustomizedTimeline/>
       <Service />
       <Team />
       <Aboutme />
